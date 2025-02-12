@@ -1,0 +1,382 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #627177;
+    color: white;
+    padding: 15px 30px;
+}
+
+.header .logo img {
+    width: 100px; 
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.github-login-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.github-login-btn:hover {
+    background-color: #45a049;
+}
+
+/* Main Content */
+main {
+    padding: 40px 30px;
+}
+
+.filters {
+    margin-bottom: 30px;
+}
+
+.filters h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.filters-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.filters-container label {
+    font-size: 16px;
+}
+
+.job-list h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.job-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.job-card {
+    background-color: #94d98e;
+    border: 1px solid #ddd;
+    padding: 37px;
+    width: 100%;
+    max-width: 350px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; 
+    height: auto;
+    
+}
+
+.job-card:nth-child(1) {
+    background-color: #FFD700; 
+}
+
+.job-card:nth-child(2) {
+    background-color: #FF6347; 
+}
+
+.job-card:nth-child(3) {
+    background-color: #32CD32; 
+}
+
+.job-card:nth-child(4) {
+    background-color: #1E90FF;
+}
+
+.job-card:nth-child(5) {
+    background-color: #FF1493; 
+}
+
+.job-card:nth-child(6) {
+    background-color: #8A2BE2; 
+}
+
+
+.job-card:hover {
+    transform: scale(1.05);
+}
+
+
+.job-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.job-card p {
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Tags nos cards */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tag {
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 14px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.tag:hover {
+    background-color: #dcdcdc;
+}
+
+/* Navbar */
+.navbar a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar button {
+    margin-left: 15px;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 30px;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-right {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.footer-left h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-email {
+    display: flex;
+}
+
+.footer-email input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.footer-email button {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-email button:hover {
+    background-color: #45a049;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-right h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-right li {
+    margin-bottom: 10px;
+}
+
+.footer-right a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer-right a:hover {
+    color: #fff;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social .social-icon {
+    background-color: #555;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer-social .social-icon:hover {
+    background-color: #4caf50;
+}
+
+/* Estilo para o Card FAQ */
+.faq-card {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.faq-header h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.expand-btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.expand-btn:hover {
+    background-color: #45a049;
+}
+
+.faq-body {
+    margin-top: 15px;
+}
+
+.faq-body ul {
+    list-style: none;
+    padding: 0;
+}
+
+.faq-body li {
+    margin-bottom: 10px;
+}
+
+.faq-body strong {
+    font-weight: bold;
+}
+
+/* Card FAQ */
+.faq-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-card h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.expand-btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.expand-btn:hover {
+    background-color: #45a049;
+}
+
+.faq-answer {
+    margin-top: 10px;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #555;
+}
