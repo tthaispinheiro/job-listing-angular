@@ -1,27 +1,35 @@
-# JobListings
+# 🧑‍💻 **JobListings - Projeto Angular**
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.11.
+**JobListings** é uma aplicação web que exibe uma lista de vagas de emprego com filtro dinâmico baseado nas tecnologias utilizadas nas vagas, como **React**, **Node.js**, **Ruby**, **Java**, entre outras.
 
-## Development server
+## 🚀 Funcionalidades
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Exibição de vagas de emprego**.
+- **Filtragem dinâmica** de vagas por tecnologias.
+- **Interface responsiva** e interativa.
+- **Fácil integração com o backend** para atualização de vagas.
 
-## Code scaffolding
+## 🛠️ Tecnologias Utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Angular**: Framework para desenvolvimento frontend.
+- **TypeScript**: Linguagem usada para o desenvolvimento da aplicação.
+- **CSS**: Estilização do layout.
+- **Node.js**: Para configuração do ambiente (caso necessário).
 
-## Build
+## ⚙️ Como Rodar o Projeto Localmente
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### 🔥 Pré-requisitos
 
-## Running unit tests
+Antes de começar, verifique se você possui as seguintes ferramentas instaladas em sua máquina:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Node.js** (recomendado versão 14.x ou superior)
+- **npm** (gerenciador de pacotes do Node.js)
+  
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. **Clone o repositório:**
 
-## Further help
+   No terminal, rode o seguinte comando para clonar o repositório:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+   ```bash
+   git clone https://github.com/tthaispinheiro/job-listing-angular.git
