@@ -1,0 +1,31 @@
+[
+    {
+      "id": 1,
+      "title": "Frontend Developer",
+      "company": "Company A",
+      "location": "Remote",
+      "tags": ["JavaScript", "React", "CSS"]
+    },
+    {
+      "id": 2,
+      "title": "Backend Developer",
+      "company": "Company B",
+      "location": "New York, NY",
+      "tags": ["Node.js", "Express", "MongoDB"]
+    },
+    {
+      "id": 3,
+      "title": "Full Stack Developer",
+      "company": "Company C",
+      "location": "San Francisco, CA",
+      "tags": ["JavaScript", "Node.js", "React"]
+    },
+    {
+      "id": 4,
+      "title": "UI/UX Designer",
+      "company": "Company D",
+      "location": "Remote",
+      "tags": ["Figma", "Adobe XD", "Design"]
+    }
+  ]
+  

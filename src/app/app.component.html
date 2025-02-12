@@ -1,0 +1,116 @@
+<div class="header">
+  <div class="logo">
+    <img src="https://via.placeholder.com/100x40" alt="Logo">
+  </div>
+  <nav class="navbar">
+    <a href="#" (click)="reloadPage()">Home</a>
+    <a href="#">Learning paths</a>
+    <a href="#">Challenges</a>
+    <a href="#">Solutions</a>
+    <a href="#">Articles</a>
+    <a href="#">Unlock Pro</a>
+    <button class="github-login-btn">Login with GitHub</button>
+  </nav>
+</div>
+
+<main>
+  <section class="filters">
+    <h2>Filtre as vagas</h2>
+    <div class="filters-container">
+      <label *ngFor="let technology of technologies">
+        <input type="checkbox" [value]="technology" (change)="onFilterChange($event)" />
+        {{ technology }}
+      </label>
+    </div>
+  </section>
+
+  <section class="job-list">
+    <h2>Vagas de Emprego</h2>
+    <div class="job-cards">
+      <div class="job-card" *ngFor="let job of filteredJobs">
+        <h3>{{ job.title }}</h3>
+        <p>{{ job.description }}</p>
+        <div class="tags">
+          <span *ngFor="let tag of job.tags" class="tag">{{ tag }}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Card Expandível FAQ -->
+  <section class="faq-card">
+    <div class="faq-header" (click)="toggleFAQ()">
+      <h3>Challenge FAQs</h3>
+      <button class="expand-btn">{{ isFAQExpanded ? '-' : '+' }}</button>
+    </div>
+    <div class="faq-body" *ngIf="isFAQExpanded">
+      <ul>
+        <li><strong>How can I get help if I'm stuck on a challenge?</strong> You can ask questions in the community
+          forum or look for similar challenges.</li>
+        <li><strong>How do I submit my solution?</strong> You can submit your solution using the "Submit" button on the
+          challenge page.</li>
+        <li><strong>Is there an official solution I can take a look at?</strong> Yes, after submitting your solution,
+          you can check official solutions.</li>
+        <li><strong>Do I get a code review when I post my solution?</strong> No, there is no official code review, but
+          you can get feedback from the community.</li>
+        <li><strong>Can I use libraries/frameworks on these projects?</strong> Yes, you can use any libraries or
+          frameworks, but it’s encouraged to try solving the challenge without them.</li>
+        <li><strong>Can I use these projects in my portfolio?</strong> Absolutely! Feel free to showcase them in your
+          portfolio.</li>
+        <li><strong>How often are new challenges added?</strong> New challenges are added regularly, typically every
+          month.</li>
+        <li><strong>What is the difference between the desktop-design, mobile-design, and desktop-preview images in my
+            starter code?</strong> The desktop-design image is for larger screens, mobile-design is for smaller screens,
+          and desktop-preview is a preview of the desktop layout.</li>
+        <li><strong>Can I use these challenges within my own free or commercial content/tutorials/projects?</strong>
+          Yes, you can incorporate them into your own projects as long as you credit Frontend Mentor.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="footer-container">
+    <div class="footer-left">
+      <h4>Stay up to date with new challenges, featured solutions, selected articles, and our latest news</h4>
+      <div class="footer-email">
+        <input type="email" placeholder="Email" />
+        <button>Subscribe</button>
+      </div>
+    </div>
+    <div class="footer-right">
+      <ul>
+        <li>
+          <h4>Frontend Mentor</h4>
+        </li>
+        <li><a href="#">Unlock Pro</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">FAQs</a></li>
+      </ul>
+      <ul>
+        <li>
+          <h4>Explore</h4>
+        </li>
+        <li><a href="#">Learning paths</a></li>
+        <li><a href="#">Challenges</a></li>
+        <li><a href="#">Solutions</a></li>
+        <li><a href="#">Articles</a></li>
+      </ul>
+      <ul>
+        <li>
+          <h4>Community</h4>
+        </li>
+        <li><a href="#">Discord</a></li>
+        <li><a href="#">Guidelines</a></li>
+        <li><a href="#">For companies</a></li>
+        <li><a href="#">Hire developers</a></li>
+        <li><a href="#">Train developers</a></li>
+      </ul>
+      <div class="footer-social">
+        <a href="#" class="social-icon">FB</a>
+        <a href="#" class="social-icon">TW</a>
+        <a href="#" class="social-icon">IN</a>
+        <a href="#" class="social-icon">YT</a>
+      </div>
+    </div>
+  </div>
+
+</footer>
